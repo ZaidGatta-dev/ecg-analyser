@@ -1,0 +1,14 @@
+# --- Large / generated files: never commit these ---
+data/                # the PTB-XL dataset itself (download separately, see README)
+models/              # trained model files (can be large, and are reproducible via train.py)
+processed/           # cached intermediate arrays
+
+# --- Python environment & cache junk ---
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- OS / editor junk ---
+.DS_Store
+.vscode/

@@ -1,0 +1,14 @@
+# Core numerical / data-handling libraries
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10          # used for signal filtering (bandpass filter)
+
+# Machine learning
+scikit-learn>=1.3    # metrics, label encoding, simple baselines
+tensorflow>=2.15     # the neural network (Keras is bundled inside it)
+
+# ECG-specific file reading
+wfdb>=4.1            # reads PhysioNet's .dat/.hea waveform files
+
+# Plotting (for looking at ECG traces and training curves)
+matplotlib>=3.7
