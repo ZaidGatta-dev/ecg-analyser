@@ -1,18 +1,18 @@
-# ECG Diagnostic Analyser (PTB-XL)
+# ECG Diagnostic Analyser (PTB-XL).
 
 A learning project that trains a neural network to detect five broad
 diagnostic categories (Normal, Myocardial Infarction, ST/T changes,
 Conduction Disturbance, Hypertrophy) from 12-lead ECG recordings, using
 the public PTB-XL dataset.
 
-> ⚠️ **This is an educational project, not a medical device.** It has not
+> **This is an educational project, not a medical device.** It has not
 > been clinically validated, is not regulatory-approved (e.g. no FDA/MHRA
 > clearance), and must never be used to make real diagnostic or treatment
 > decisions. Real diagnostic AI tools go through years of clinical
 > validation, regulatory review, and safety monitoring before use on
 > actual patients.
 
-## 1. Set up your Python environment
+## 1. Set up your Python environment.
 
 ```bash
 # Create the environment (only needed once)
@@ -28,7 +28,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 2. Download PTB-XL
+## 2. Download PTB-XL.
 
 The dataset (~1.7GB) is free.
 
@@ -49,7 +49,7 @@ ecg_analyser/
 
 (If you put it somewhere else, update `PTBXL_PATH` in `config.py`.)
 
-## 3. Run the pipeline in this order
+## 3. Run the pipeline in this order.
 
 ```bash
 # optional: check that files load correctly
@@ -73,7 +73,7 @@ somewhere from 20 minutes to a couple of hours depending on your machine.
 If it's too slow, try reducing `epochs` in `train.py`, or get it running 
 on a GPU (e.g. via Google Colab, which gives you a free GPU in the browser).
 
-## 4. What "good" looks like
+## 4. What "good" looks like.
 
 Published PTB-XL benchmarks for this exact 5-class task typically land
 in the 0.85-0.93 macro-AUC range for well-tuned deep models. Once it's 
@@ -85,7 +85,7 @@ working end-to-end, natural next steps are:
 - Trying the finer-grained "subclass" or "form" labels instead of the 5 superclasses
 - Building a small web interface (e.g. with Streamlit) to upload an ECG and see predictions
 
-## Project structure recap
+## Project structure recap.
 
 | File | Job |
 |---|---|
